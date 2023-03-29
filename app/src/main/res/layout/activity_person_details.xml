@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonDetailsActivity">
+<!--    ActionBar actionBar = getActionBar();-->
+<!--    actionBar.setDisplayHomeAsUpEnabled(true);-->
+    <ImageView
+        android:id="@+id/profileImageFull"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionText"
+        app:srcCompat="@drawable/aa" />
+
+    <TextView
+        android:id="@+id/profileNameText"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionText"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageFull" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileNameText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
